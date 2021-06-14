@@ -127,3 +127,11 @@ h3 {
 	font-size: 40px;
 	margin: 0 0.5em 1em 0;
 }
+
+footer {
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
