@@ -25,7 +25,7 @@
 					<li><a href="#">Testimonials</a></li>
 					<li><a href="#">Details</a></li>
 					<li><a href="#know-your-tutor">Know your tutor</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -39,12 +39,12 @@
 		<section id="know-your-tutor">
 			<h2>Know Your Tutor</h2>
 
-			<div id="tutor-wrapper">
-				<div id="tutor-img-wrapper">
+			<div class="section-col-wrapper">
+				<div class="section-col-1">
 					<img src="static/img/rashi-killa.jpg" alt="Rashi Killa" />
 				</div>
 
-				<div id="tutor-text-wrapper">
+				<div class="section-col-2">
 					<h3>Rashi Killa</h3>
 
 					<div id="tutor-text">
@@ -63,6 +63,96 @@
 						proficiency, I ensure that my students get the best
 						learning experience.
 					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<h2>Contact</h2>
+
+			<div class="section-col-wrapper">
+				<div class="section-col-1" id="contact-col-1">
+					<table>
+						<tbody>
+							<tr>
+								<td id="img-td">
+									<img
+										src="static/img/phone.svg"
+										alt="Phone Number"
+										id="phone-img"
+									/>
+								</td>
+								<td>
+									<a href="tel:+917738377934"
+										>+91 77383 77934</a
+									>
+								</td>
+							</tr>
+
+							<tr>
+								<td id="img-td">
+									<img
+										src="static/img/instagram.svg"
+										alt="Instagram"
+										id="instagram-img"
+									/>
+								</td>
+								<td>
+									<a
+										href="https://www.instagram.com/linguistic_world_mumbai/"
+										target="_blank"
+										rel="noreferrer"
+										>@linguistic_world_mumbai</a
+									>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="section-col-2">
+					<h3>Contact Us!</h3>
+
+					<form action="">
+						<label for="name">Full name <sup>*</sup></label>
+						<input
+							type="text"
+							name="name"
+							autocomplete="name"
+							placeholder="Jane Doe"
+							required
+						/>
+
+						<label for="phone_no"
+							>Phone number (with country code)
+							<sup>*</sup></label
+						>
+						<input
+							inputmode="tel"
+							name="phone_no"
+							autocomplete="tel-country-code"
+							placeholder="+919876543210"
+							required
+						/>
+
+						<label for="email">e-mail <sup>*</sup></label>
+						<input
+							type="email"
+							name="email"
+							autocomplete="email"
+							placeholder="abc@xyz.com"
+							required
+						/>
+
+						<label for="msg">Message <sup>*</sup></label>
+						<textarea
+							name="msg"
+							cols="30"
+							rows="10"
+							placeholder="Type a message"
+							required
+						></textarea>
+					</form>
 				</div>
 			</div>
 		</section>
