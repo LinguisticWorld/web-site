@@ -131,6 +131,23 @@ h3 {
 	margin: 0 0.5em 1em 0;
 }
 
+.cards-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2em;
+}
+
+.card {
+	padding: 1em;
+	border: solid 2px hsl(342, 74%, 26%);
+	border-radius: 5px;
+	box-shadow: 0 0 15px hsl(180, 2%, 95%);
+}
+
+.card-text {
+	margin-bottom: 1em;
+}
+
 #contact-col-1 {
 	flex-direction: column;
 	margin-right: 2em;
