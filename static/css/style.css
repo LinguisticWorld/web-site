@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-padding: 10vh 0 0 0;
+}
+
 body {
 	font-family: "Poppins", sans-serif;
 	background-color: hsl(21, 96%, 99%);
@@ -128,7 +132,6 @@ section {
 	min-height: 100vh;
 	width: 85%;
 	margin: 0 auto 5em auto;
-	/* scroll-padding: 10vh 0 0 0; */
 }
 
 .section-col-wrapper {
