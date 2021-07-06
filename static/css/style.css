@@ -202,18 +202,25 @@ td {
 
 #img-td {
 	text-align: center;
+	padding-right: 0.5em;
+}
+
+#img-td img {
+	border: none;
+	padding: 0;
+	margin: 0;
 }
 
 #phone-img {
-	width: 3vw;
-	border: none;
-	padding: 0;
+	width: 3em;
 }
 
 #instagram-img {
-	width: 4.5vw;
-	border: none;
-	padding: 0;
+	width: 4.5em;
+}
+
+#email-img {
+	width: 2.5em;
 }
 
 form {
@@ -238,6 +245,17 @@ input {
 textarea {
 	padding: 0.5em;
 	resize: vertical;
+}
+
+button {
+	padding: 0.5em 1em;
+	margin: 1.75em 0;
+	font-size: 15px;
+	font-size: clamp(18px, 4vw, 20px);
+	background-color: hsl(342, 74%, 26%);
+	color: hsl(21, 96%, 95%);
+	border-radius: 5px;
+	border: solid 1px hsl(342, 74%, 26%);
 }
 
 footer {
