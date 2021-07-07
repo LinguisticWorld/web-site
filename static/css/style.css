@@ -5,7 +5,7 @@
 }
 
 html {
-	scroll-padding: 10vh 0 0 0;
+	scroll-padding: 8vh 0 0 0;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-	height: 10vh;
+	height: 8vh;
 	padding: 0 8em;
 	display: flex;
 	justify-content: space-between;
@@ -23,7 +23,7 @@ header {
 	top: 0;
 	z-index: 1;
 	background-color: hsl(21, 96%, 99%);
-	box-shadow: 0 0 15px hsl(180, 2%, 92%);
+	box-shadow: 0 0 15px hsl(0, 0%, 74%);
 }
 
 #logo-wrapper {
@@ -32,7 +32,7 @@ header {
 }
 
 #logo {
-	height: 8vh;
+	height: 6vh;
 	width: auto;
 }
 
@@ -69,7 +69,7 @@ a:hover {
 }
 
 main {
-	min-height: 90vh;
+	min-height: 92vh;
 	padding: 0 1em;
 	display: flex;
 	flex-direction: column;
