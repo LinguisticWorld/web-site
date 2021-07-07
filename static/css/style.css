@@ -173,10 +173,10 @@ section {
 	flex-direction: column;
 }
 
-#tutor-text {
+p {
 	font-size: 15px;
 	font-size: clamp(15px, 2vw, 18px);
-	line-height: 1.5em;
+	margin: 0.5em 0;
 }
 
 h3 {
@@ -199,7 +199,7 @@ h3 {
 }
 
 .card-text {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 
 #contact-col-1 {
