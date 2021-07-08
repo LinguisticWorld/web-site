@@ -6,13 +6,14 @@
 
 :root {
 	--base-color: hsl(174, 38%, 95%);
-	--contrast-color: hsl(234, 75%, 43%);
-	--shadow-color: hsl(0, 0%, 74%);
-	--light-shadow-color: hsl(0, 0%, 90%);
+	--contrast-color: hsl(231, 99%, 62%);
+	--shadow-color: hsl(0, 0%, 0%);
+	--header-shadow-color: hsl(0, 0%, 50%);
 }
 
 html {
 	scroll-padding: 8vh 0 0 0;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -30,7 +31,7 @@ header {
 	top: 0;
 	z-index: 1;
 	background-color: var(--base-color);
-	box-shadow: 0 0 15px var(--shadow-color);
+	box-shadow: 0 -5px 15px var(--header-shadow-color);
 }
 
 #logo-wrapper {
@@ -105,18 +106,16 @@ main::before {
 	background-repeat: repeat;
 	background-size: cover;
 	object-fit: cover;
-	opacity: 0.5;
-	filter: contrast(0.9);
+	filter: contrast(0.5);
 }
 
 h1 {
 	font-size: 50px;
 	font-size: clamp(50px, 10vw, 80px);
-	text-transform: uppercase;
-	font-style: italic;
 	text-align: center;
 	margin: 0 1em;
-	text-shadow: 1px 0 0 var(--shadow-color);
+	color: var(--base-color);
+	text-shadow: 0 0 15px var(--shadow-color);
 }
 
 h2 {
@@ -127,7 +126,8 @@ h2 {
 }
 
 main h2 {
-	text-shadow: 1.5px 1.5px 5px var(--shadow-color);
+	color: var(--base-color);
+	text-shadow: 0 0 10px var(--shadow-color);
 }
 
 #cta {
@@ -143,7 +143,7 @@ main h2 {
 }
 
 #cta:hover {
-	box-shadow: 0 0 20px var(--shadow-color);
+	box-shadow: 0 1px 20px var(--shadow-color);
 }
 
 section {
@@ -287,6 +287,8 @@ button {
 	color: var(--base-color);
 	border-radius: 5px;
 	border: solid 1px var(--contrast-color);
+	cursor: pointer;
+	box-shadow: 0 7px 30px -10px hsla(200, 16.7%, 64.7%, 0.5);
 }
 
 footer {
@@ -346,7 +348,7 @@ footer {
 		z-index: 1;
 		border-radius: 5px;
 		background-color: hsla(174, 38%, 95%, 0.98);
-		box-shadow: 0 0 15px var(--shadow-color);
+		box-shadow: 0 0 5px var(--header-shadow-color);
 	}
 
 	.burger-menu-dropdown li {
