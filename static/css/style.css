@@ -6,7 +6,7 @@
 
 :root {
 	--base-color: hsl(174, 38%, 95%);
-	--contrast-color: hsl(231, 99%, 62%);
+	--contrast-color: hsl(202, 66%, 49%);
 	--shadow-color: hsl(0, 0%, 0%);
 	--header-shadow-color: hsl(0, 0%, 50%);
 }
@@ -133,7 +133,7 @@ main h2 {
 }
 
 #cta {
-	font-size: 15px;
+	font-size: 18px;
 	font-size: clamp(18px, 4vw, 20px);
 	background-color: var(--contrast-color);
 	color: var(--base-color);
@@ -152,6 +152,34 @@ section {
 	min-height: 100vh;
 	width: 85%;
 	margin: 0 auto 5em auto;
+}
+
+#services ul {
+	margin-bottom: 2em;
+}
+
+#services li {
+	list-style-position: inside;
+}
+
+.cards-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2em;
+}
+
+.card {
+	padding: 1em;
+	border: solid 2px var(--contrast-color);
+	border-radius: 5px;
+	box-shadow: 0 7px 30px -10px hsla(200, 16.7%, 64.7%, 0.5);
+}
+
+#card-title {
+	font-weight: bold;
+	font-size: 18px;
+	font-size: clamp(18px, 4vw, 20px);
+	margin-bottom: 1em;
 }
 
 .section-col-wrapper {
@@ -199,19 +227,6 @@ h3 {
 	font-size: 30px;
 	font-size: clamp(30px, 5vw, 40px);
 	margin: 0 0.5em 1em 0;
-}
-
-.cards-wrapper {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 2em;
-}
-
-.card {
-	padding: 1em;
-	border: solid 2px var(--contrast-color);
-	border-radius: 5px;
-	box-shadow: 0 7px 30px -10px hsla(200, 16.7%, 64.7%, 0.5);
 }
 
 .card-text {
