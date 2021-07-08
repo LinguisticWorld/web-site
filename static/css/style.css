@@ -27,6 +27,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	z-index: 1;
@@ -232,12 +233,12 @@ td {
 	word-break: break-all;
 }
 
-#img-td {
+.img-td {
 	text-align: center;
 	padding-right: 0.5em;
 }
 
-#img-td img {
+.img-td img {
 	border: none;
 	padding: 0;
 	margin: 0;
