@@ -4,13 +4,20 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--base-color: hsl(174, 38%, 95%);
+	--contrast-color: hsl(234, 75%, 43%);
+	--shadow-color: hsl(0, 0%, 74%);
+	--light-shadow-color: hsl(0, 0%, 90%);
+}
+
 html {
 	scroll-padding: 8vh 0 0 0;
 }
 
 body {
 	font-family: "Poppins", sans-serif;
-	background-color: hsl(21, 96%, 99%);
+	background-color: var(--base-color);
 }
 
 header {
@@ -22,8 +29,8 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 1;
-	background-color: hsl(21, 96%, 99%);
-	box-shadow: 0 0 15px hsl(0, 0%, 74%);
+	background-color: var(--base-color);
+	box-shadow: 0 0 15px var(--shadow-color);
 }
 
 #logo-wrapper {
@@ -31,8 +38,14 @@ header {
 	align-items: center;
 }
 
+#logo-wrapper a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 #logo {
-	height: 6vh;
+	height: 7vh;
 	width: auto;
 }
 
@@ -57,7 +70,7 @@ nav li {
 }
 
 a {
-	color: hsl(342, 74%, 26%);
+	color: var(--contrast-color);
 	font-size: 15px;
 	font-size: clamp(16px, 4vw, 20px);
 	text-decoration: none;
@@ -93,7 +106,7 @@ main::before {
 	background-size: cover;
 	object-fit: cover;
 	opacity: 0.5;
-	filter: contrast(0.8);
+	filter: contrast(0.9);
 }
 
 h1 {
@@ -103,7 +116,7 @@ h1 {
 	font-style: italic;
 	text-align: center;
 	margin: 0 1em;
-	text-shadow: 1px 0 0 hsl(180, 2%, 82%);
+	text-shadow: 1px 0 0 var(--shadow-color);
 }
 
 h2 {
@@ -114,23 +127,23 @@ h2 {
 }
 
 main h2 {
-	text-shadow: 1.5px 1.5px 5px hsl(180, 2%, 82%);
+	text-shadow: 1.5px 1.5px 5px var(--shadow-color);
 }
 
 #cta {
 	font-size: 15px;
 	font-size: clamp(18px, 4vw, 20px);
-	background-color: hsl(342, 74%, 26%);
-	color: hsl(21, 96%, 95%);
+	background-color: var(--contrast-color);
+	color: var(--base-color);
 	padding: 1em 3em;
-	border-radius: 5px;
-	border: solid 1px hsl(342, 74%, 26%);
+	border-radius: 38px;
+	border: solid 1px var(--contrast-color);
 	text-decoration: none;
-	box-shadow: 0 0 15px hsl(180, 2%, 82%);
+	box-shadow: 0 0 15px var(--shadow-color);
 }
 
 #cta:hover {
-	box-shadow: 0 0 20px hsl(180, 2%, 76%);
+	box-shadow: 0 0 20px var(--shadow-color);
 }
 
 section {
@@ -161,7 +174,7 @@ section {
 	position: absolute;
 	top: 1.5em;
 	right: 1.5em;
-	border: solid 2px hsl(342, 74%, 26%);
+	border: solid 2px var(--contrast-color);
 }
 
 .section-col-1 img {
@@ -194,9 +207,9 @@ h3 {
 
 .card {
 	padding: 1em;
-	border: solid 2px hsl(342, 74%, 26%);
+	border: solid 2px var(--contrast-color);
 	border-radius: 5px;
-	box-shadow: 0 0 15px hsl(180, 2%, 95%);
+	box-shadow: 0 7px 30px -10px hsla(200, 16.7%, 64.7%, 0.5);
 }
 
 .card-text {
@@ -270,10 +283,10 @@ button {
 	margin: 1.75em 0;
 	font-size: 15px;
 	font-size: clamp(18px, 4vw, 20px);
-	background-color: hsl(342, 74%, 26%);
-	color: hsl(21, 96%, 95%);
+	background-color: var(--contrast-color);
+	color: var(--base-color);
 	border-radius: 5px;
-	border: solid 1px hsl(342, 74%, 26%);
+	border: solid 1px var(--contrast-color);
 }
 
 footer {
@@ -319,7 +332,7 @@ footer {
 	.line-3 {
 		width: 25px;
 		height: 3px;
-		background-color: hsl(342, 74%, 26%);
+		background-color: var(--contrast-color);
 		margin: 5px;
 	}
 
@@ -332,8 +345,8 @@ footer {
 		padding: 0.5em 1em;
 		z-index: 1;
 		border-radius: 5px;
-		background-color: hsla(21, 96%, 99%, 0.98);
-		box-shadow: 0 0 15px hsl(0, 0%, 74%);
+		background-color: hsla(174, 38%, 95%, 0.98);
+		box-shadow: 0 0 15px var(--shadow-color);
 	}
 
 	.burger-menu-dropdown li {
