@@ -91,8 +91,6 @@ main {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	background-color: black;
-	z-index: -1;
 }
 
 main::before {
@@ -107,6 +105,7 @@ main::before {
 	background-position: center;
 	background-repeat: repeat;
 	background-size: cover;
+	background-color: black;
 	object-fit: cover;
 	filter: contrast(0.5);
 }
