@@ -91,6 +91,8 @@ main {
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	background-color: black;
+	z-index: -1;
 }
 
 main::before {
