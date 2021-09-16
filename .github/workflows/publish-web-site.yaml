@@ -2,20 +2,23 @@ name: Publish to GitHub Pages
 on:
     push:
         branches:
-            - "main"
+            - main
         paths:
             - ".github/workflows/publish-web-site.yaml"
             - "static/**"
-            - "index.html"
-            - "robots.txt"
+            - index.html
+            - robots.txt
+            - CNAME
     pull_request:
         branches:
             - "main"
         paths:
             - ".github/workflows/publish-web-site.yaml"
             - "static/**"
-            - "index.html"
-            - "robots.txt"
+            - index.html
+            - robots.txt
+            - CNAME
+    workflow_dispatch:
 
 jobs:
     publish-web-site:
@@ -58,7 +61,7 @@ jobs:
                       rm -rf ./*
 
                       # Get latest source
-                      git restore -s "$BRANCH_NAME" static index.html robots.txt
+                      git restore -s "$BRANCH_NAME" static index.html robots.txt CNAME
                   fi
 
             - name: Deploy to GitHub Pages
