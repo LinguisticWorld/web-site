@@ -9,7 +9,7 @@
 		/>
 		<meta
 			name="description"
-			content="Personalized Mandarin and Spanish lessons."
+			content="Personalized Mandarin and Spanish Lessons."
 		/>
 		<meta name="author" content="Harsh Kapadia" />
 		<meta property="og:site_name" content="Linguistic World" />
@@ -17,12 +17,9 @@
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:description"
-			content="Personalized Mandarin and Spanish lessons."
+			content="Personalized Mandarin and Spanish Lessons."
 		/>
-		<meta
-			property="og:url"
-			content="https://harshkapadia2.github.io/linguistic-world/"
-		/>
+		<meta property="og:url" content="https://linguisticworld.in" />
 		<meta
 			property="og:image"
 			content="https://user-images.githubusercontent.com/50140864/122058784-9b45c300-ce09-11eb-8725-aede7bc79fb4.png"
@@ -34,7 +31,8 @@
 
 		<script defer src="static/js/script.js"></script>
 
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Poppins&display=swap"
 			rel="stylesheet"
@@ -68,39 +66,54 @@
 				<ul class="navbar-ul hide-burger-menu burger-menu-dropdown">
 					<li><a href="#">Home</a></li>
 					<li><a href="#services">Services</a></li>
-					<li><a href="#know-your-tutor">Know your tutor</a></li>
+					<li><a href="#tutor">Tutor</a></li>
 					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#contact">Contact us</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main>
 			<h1>Linguistic World</h1>
-			<h2>Personalized Mandarin and Spanish Lessons.</h2>
-			<a href="#contact" id="cta">Enroll now!</a>
+			<h2>Personalized Mandarin and Spanish Lessons</h2>
+			<a href="#contact" id="cta">
+				Enroll Now
+				<img src="static/img/arrow.svg" alt="->" />
+			</a>
 		</main>
 
 		<section id="services">
-			<h2>Services</h2>
+			<h2>Services Offered</h2>
 
-			<div>Languages offered:</div>
-			<ul>
-				<li>Mandarin</li>
-				<li>Spanish</li>
-			</ul>
+			<h3>Language</h3>
 
-			<div>Language abilities covered:</div>
-			<ul>
-				<li>Speaking</li>
-				<li>Reading</li>
-				<li>Writing</li>
-				<li>Listening</li>
-			</ul>
+			<div id="lang-services-wrapper" class="cards-wrapper">
+				<div class="card">
+					<div class="card-title">Languages</div>
+
+					<ul>
+						<li>Mandarin</li>
+						<li>Spanish</li>
+					</ul>
+				</div>
+
+				<div class="card">
+					<div class="card-title">Language Abilities</div>
+
+					<ul>
+						<li>Speaking</li>
+						<li>Reading</li>
+						<li>Writing</li>
+						<li>Listening</li>
+					</ul>
+				</div>
+			</div>
+
+			<h3>Training</h3>
 
 			<div class="cards-wrapper">
 				<div class="card">
-					<div id="card-title">Corporate Training</div>
+					<div class="card-title">Corporate Training</div>
 
 					<p>
 						A unique course to meet corporate needs, followed by
@@ -114,7 +127,7 @@
 				</div>
 
 				<div class="card">
-					<div id="card-title">Crash Course</div>
+					<div class="card-title">Crash Course</div>
 
 					<p>A two to four week course depending on the student.</p>
 					<p>
@@ -128,7 +141,7 @@
 				</div>
 
 				<div class="card">
-					<div id="card-title">One-on-one Training</div>
+					<div class="card-title">One-on-one Training</div>
 
 					<p>
 						We assist learners in mastering the language by
@@ -143,7 +156,7 @@
 				</div>
 
 				<div class="card">
-					<div id="card-title">Young Learners</div>
+					<div class="card-title">Young Learners</div>
 
 					<p>
 						A unique course for young learners that motivates them
@@ -161,7 +174,7 @@
 			</div>
 		</section>
 
-		<section id="know-your-tutor">
+		<section id="tutor">
 			<h2>Know Your Tutor</h2>
 
 			<div class="section-col-wrapper">
@@ -263,32 +276,6 @@
 				<div class="card">
 					<div class="card-text">
 						<p>
-							My daughter Thwisha takes Mandarin classes from
-							Rashi and she is really happy with the way the
-							classes are conducted.
-						</p>
-
-						<p>
-							Rashi is very good with Mandarin characters and
-							pronunciation. Also, Thwisha is very comfortable
-							speaking to her regarding her doubts and queries and
-							has never had any complaints in Mandarin. She is
-							also guiding Thwisha for Mandarin international
-							exams.
-						</p>
-
-						<p>
-							I would highly recommend Rashi if anyone wants to
-							learn Mandarin.
-						</p>
-					</div>
-
-					<div class="card-author">—Swati Amrith</div>
-				</div>
-
-				<div class="card">
-					<div class="card-text">
-						<p>
 							Highly recommended! It was absolutely a great
 							experience studying Mandarin with Rashi ma'am.
 						</p>
@@ -303,147 +290,50 @@
 
 					<div class="card-author">—Ruchita Shinde</div>
 				</div>
-
-				<div class="card">
-					<div class="card-text">
-						<p>
-							It was indeed an excellent experience of learning
-							the Spanish language from you. You have taught me
-							with so much of dedication. You were always on time
-							for the class and ensured I learnt the vocabulary
-							and grammar well and have done the homework before
-							proceeding for next class.
-						</p>
-
-						<p>
-							You supported me a lot for my Dele A1 exam, not only
-							by taking extra classes to bring me up to that
-							proficiency level to give the exam, but also by
-							giving me training on speaking and listening skills.
-						</p>
-
-						<p>
-							You are a truly hardworking teacher and I am very
-							very thankful to you. Awaiting to start Mandarin
-							from month of August. Thanks once again!
-						</p>
-					</div>
-
-					<div class="card-author">—Rhea Shah</div>
-				</div>
 			</div>
 		</section>
 
 		<section id="contact">
 			<h2>Contact Us</h2>
 
-			<div class="section-col-wrapper">
-				<div class="section-col-1" id="contact-col-1">
-					<table>
-						<tbody>
-							<tr>
-								<td class="img-td">
-									<img
-										src="static/img/phone.svg"
-										alt="Phone Number"
-										id="phone-img"
-										loading="lazy"
-									/>
-								</td>
+			<table>
+				<tbody>
+					<tr>
+						<td class="img-td">
+							<img
+								src="static/img/phone.svg"
+								alt="Phone Number"
+								id="phone-img"
+								loading="lazy"
+							/>
+						</td>
 
-								<td>
-									<a href="tel:+917738377934"
-										>+91 77383 77934</a
-									>
-								</td>
-							</tr>
+						<td>
+							<a href="tel:+917738377934">+91 77383 77934</a>
+						</td>
+					</tr>
 
-							<tr>
-								<td class="img-td">
-									<img
-										src="static/img/instagram.svg"
-										alt="Instagram"
-										id="instagram-img"
-										loading="lazy"
-									/>
-								</td>
+					<tr>
+						<td class="img-td">
+							<img
+								src="static/img/instagram.svg"
+								alt="Instagram"
+								id="instagram-img"
+								loading="lazy"
+							/>
+						</td>
 
-								<td>
-									<a
-										href="https://www.instagram.com/linguistic_world_mumbai/"
-										target="_blank"
-										rel="noreferrer"
-										>@linguistic_world_mumbai</a
-									>
-								</td>
-							</tr>
-
-							<tr>
-								<td class="img-td">
-									<img
-										src="static/img/email.svg"
-										alt="e-mail"
-										id="email-img"
-										loading="lazy"
-									/>
-								</td>
-
-								<td>
-									<a
-										href="mailto:linguisticworldindia@gmail.com"
-										>linguisticworldindia@gmail.com</a
-									>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
-				<div class="section-col-2">
-					<form action="">
-						<label for="name">Full name <sup>*</sup></label>
-						<input
-							type="text"
-							name="name"
-							autocomplete="name"
-							placeholder="Jane Doe"
-							required
-						/>
-
-						<label for="phone_no"
-							>Phone number (with country code)
-							<sup>*</sup></label
-						>
-						<input
-							type="tel"
-							name="phone_no"
-							autocomplete="tel-country-code"
-							placeholder="+919876543210"
-							required
-						/>
-
-						<label for="email">e-mail <sup>*</sup></label>
-						<input
-							type="email"
-							name="email"
-							autocomplete="email"
-							placeholder="abc@xyz.com"
-							required
-						/>
-
-						<label for="msg">Message <sup>*</sup></label>
-						<textarea
-							name="msg"
-							cols="30"
-							rows="10"
-							placeholder="Type a message"
-							required
-						></textarea>
-
-						<button type="submit">Send message</button>
-					</form>
-				</div>
-			</div>
+						<td>
+							<a
+								href="https://www.instagram.com/linguistic_world_mumbai"
+								target="_blank"
+								rel="noreferrer"
+								>@linguistic_world_mumbai</a
+							>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</section>
 
 		<footer>&copy; 2021 Linguistic World</footer>

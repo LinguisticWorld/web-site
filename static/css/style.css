@@ -7,7 +7,7 @@
 :root {
 	--base-color: hsl(174, 38%, 95%);
 	--contrast-color: hsl(202, 66%, 49%);
-	--shadow-color: hsl(0, 0%, 0%);
+	--shadow-color: hsl(0, 0%, 10%);
 	--header-shadow-color: hsl(0, 0%, 50%);
 }
 
@@ -51,12 +51,6 @@ header {
 	width: auto;
 }
 
-#logo-title {
-	height: 3vh;
-	width: auto;
-	margin-left: 2em;
-}
-
 nav {
 	display: flex;
 	align-items: center;
@@ -73,8 +67,8 @@ nav li {
 
 a {
 	color: var(--contrast-color);
-	font-size: 15px;
-	font-size: clamp(16px, 4vw, 20px);
+	font-size: 17px;
+	font-size: clamp(17px, 4vw, 20px);
 	text-decoration: none;
 	text-underline-offset: 5px;
 	text-decoration-thickness: 1px;
@@ -113,8 +107,8 @@ main::before {
 
 h1 {
 	font-family: "Alegreya SC", serif;
-	font-size: 50px;
-	font-size: clamp(50px, 10vw, 80px);
+	font-size: 68px;
+	font-size: clamp(68px, 10vw, 140px);
 	text-align: center;
 	margin: 0 1em;
 	color: var(--base-color);
@@ -123,29 +117,41 @@ h1 {
 
 h2 {
 	font-family: "Alegreya SC", serif;
-	font-size: 22px;
-	font-size: clamp(22px, 8vw, 45px);
+	font-size: 33px;
+	font-size: clamp(33px, 6vw, 60px);
 	text-align: center;
-	margin: 1em 0.5em 2em 0.5em;
+	margin: 0.5em 0.5em 1em 0.5em;
 }
 
 main h2 {
 	font-family: inherit;
-	/* letter-spacing: 0.05em; */
+	font-size: 30px;
+	font-size: clamp(22px, 3vw, 40px);
+	margin-bottom: 3em;
 	color: var(--base-color);
 	text-shadow: 0 0 10px var(--shadow-color);
 }
 
 #cta {
-	font-size: 18px;
-	font-size: clamp(18px, 4vw, 20px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 26px;
+	font-size: clamp(22px, 3vw, 30px);
 	background-color: var(--contrast-color);
 	color: var(--base-color);
-	padding: 1em 3em;
+	padding: 0.25em 1em;
 	border-radius: 38px;
 	border: solid 1px var(--contrast-color);
 	text-decoration: none;
-	box-shadow: 0 0 15px var(--shadow-color);
+	box-shadow: 0 0 10px var(--shadow-color);
+}
+
+#cta img {
+	width: 1.2em;
+	height: auto;
+	transform: rotate(90deg);
+	margin-left: 0.5em;
 }
 
 #cta:hover {
@@ -155,15 +161,24 @@ main h2 {
 section {
 	min-height: 100vh;
 	width: 85%;
-	margin: 0 auto 5em auto;
-}
-
-#services ul {
-	margin-bottom: 2em;
+	margin: 0 auto 8em auto;
 }
 
 #services li {
 	list-style-position: inside;
+	font-size: 16px;
+	font-size: clamp(16px, 2vw, 18px);
+}
+
+h3 {
+	font-family: "Alegreya SC", serif;
+	font-size: 28px;
+	font-size: clamp(28px, 4vw, 40px);
+	margin: 0 0.5em 1em 0;
+}
+
+#lang-services-wrapper {
+	margin-bottom: 4em;
 }
 
 .cards-wrapper {
@@ -179,11 +194,15 @@ section {
 	box-shadow: 0 7px 30px -10px hsla(200, 16.7%, 64.7%, 0.5);
 }
 
-#card-title {
+.card-title {
 	font-weight: bold;
 	font-size: 18px;
 	font-size: clamp(18px, 4vw, 20px);
 	margin-bottom: 1em;
+}
+
+#tutor {
+	margin-bottom: 0;
 }
 
 .section-col-wrapper {
@@ -222,16 +241,9 @@ section {
 }
 
 p {
-	font-size: 15px;
-	font-size: clamp(15px, 2vw, 18px);
+	font-size: 16px;
+	font-size: clamp(16px, 2vw, 18px);
 	margin: 0.5em 0;
-}
-
-h3 {
-	font-family: "Alegreya SC", serif;
-	font-size: 30px;
-	font-size: clamp(30px, 5vw, 40px);
-	margin: 0 0.5em 1em 0;
 }
 
 .card-text {
@@ -239,13 +251,18 @@ h3 {
 }
 
 .card-author {
-	font-size: 15px;
-	font-size: clamp(15px, 2vw, 18px);
+	font-size: 16px;
+	font-size: clamp(16px, 2vw, 18px);
 }
 
-#contact-col-1 {
+#contact {
+	display: flex;
 	flex-direction: column;
-	margin-right: 2em;
+	align-items: center;
+}
+
+#contact h2 {
+	margin-top: 0;
 }
 
 td {
@@ -270,47 +287,6 @@ td {
 
 #instagram-img {
 	width: 4.5em;
-}
-
-#email-img {
-	width: 2.5em;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-}
-
-label {
-	margin-bottom: 0.5em;
-}
-
-sup {
-	color: red;
-}
-
-input {
-	height: 4vh;
-	padding: 0 0.5em;
-	margin-bottom: 1.2em;
-}
-
-textarea {
-	padding: 0.5em;
-	resize: vertical;
-}
-
-button {
-	padding: 0.5em 1em;
-	margin: 1.75em 0;
-	font-size: 15px;
-	font-size: clamp(18px, 4vw, 20px);
-	background-color: var(--contrast-color);
-	color: var(--base-color);
-	border-radius: 5px;
-	border: solid 1px var(--contrast-color);
-	cursor: pointer;
-	box-shadow: 0 7px 30px -10px hsla(200, 16.7%, 64.7%, 0.5);
 }
 
 footer {
@@ -345,7 +321,7 @@ footer {
 		flex: 1;
 	}
 
-	/* NAVBAR MEDIA QUERY */
+	/* FOR NAVBAR */
 
 	.burger-menu:hover {
 		cursor: pointer;
@@ -364,7 +340,7 @@ footer {
 		display: flex;
 		flex-direction: column;
 		position: absolute;
-		top: 9vh;
+		top: 11vh;
 		right: 1vh;
 		padding: 0.5em 1em;
 		z-index: 1;
@@ -390,9 +366,13 @@ footer {
 		padding: 0 2em;
 	}
 
-	#logo-title {
-		margin-left: 0.5em;
-		height: 2vh;
+	h1 {
+		margin-bottom: 0.5em;
+	}
+
+	section,
+	#tutor {
+		margin-bottom: 5em;
 	}
 
 	#tutor-img-border {
@@ -419,7 +399,7 @@ footer {
 		width: 1.8em;
 	}
 
-	/* NAVBAR MEDIA QUERY */
+	/* FOR NAVBAR */
 
 	.burger-menu-dropdown li {
 		padding: 0.25em 0;
